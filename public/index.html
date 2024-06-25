@@ -4,60 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>African Table</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      body {
-        height: 100vh;
-        font-size: 16px;
-        padding: 10px;
-      }
-      html {
-        scroll-behavior: smooth;
-      }  
-      
-      .chat-icon {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: var(--color-secondary);
-        border: none;
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        /* color: var(--off-white); */
-        box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
-        z-index: 1000;
-      }
-    </style>
+    <link rel="shortcut" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
+    <style></style>
   </head>
   <body>
     <h1>Welcome to African Pot</h1>
-    <p>Click the chat icon below to start chatting with us</p>
-    <button class="chat-icon">
-      <i class="fa-solid fa-comment-dots fa-2"></i> I am tired o
-    </button>
-    <div class="container">
-      <!-- <iframe
-        src="https://african-table.herokuapp.com"
-        style="width: 100%; height: 100vh; border: none"
-        color="red"
-      ></iframe> -->
+    <p>Click for down so you go select wetin you wan chop</p>
+    <!-- <button class="chat-icon" id="chatIcon">
+      <i class="fa-solid fa-comment-dots fa"></i>
+    </button> -->
+    <div
+      class="chatIcon-launcher chatIcon-xwnr1t e11rlguj4"
+      id="chatIcon-launcher"
+      role="button"
+      data-testid="launcher-with-badge-cutout-none"
+      aria-label="Open chatIcon Messenger"
+      tabindex="0"
+    >
+      <div
+        data-testid="launcher-default-open-icon"
+        class="chatIcon-1paricb e11rlguj3"
+      >
+        <svg
+          focusable="false"
+          aria-hidden="true"
+          viewBox="0 0 28 32"
+          width="28"
+          height="32"
+        >
+          <path
+            d="M28,32 C28,32 23.2863266,30.1450667 19.4727818,28.6592 L3.43749107,28.6592 C1.53921989,28.6592 0,27.0272 0,25.0144 L0,3.6448 C0,1.632 1.53921989,0 3.43749107,0 L24.5615088,0 C26.45978,0 27.9989999,1.632 27.9989999,3.6448 L27.9989999,22.0490667 L28,22.0490667 L28,32 Z M23.8614088,20.0181333 C23.5309223,19.6105242 22.9540812,19.5633836 22.5692242,19.9125333 C22.5392199,19.9392 19.5537934,22.5941333 13.9989999,22.5941333 C8.51321617,22.5941333 5.48178311,19.9584 5.4277754,19.9104 C5.04295119,19.5629428 4.46760991,19.6105095 4.13759108,20.0170667 C3.97913051,20.2124916 3.9004494,20.4673395 3.91904357,20.7249415 C3.93763774,20.9825435 4.05196575,21.2215447 4.23660523,21.3888 C4.37862552,21.5168 7.77411059,24.5386667 13.9989999,24.5386667 C20.2248893,24.5386667 23.6203743,21.5168 23.7623946,21.3888 C23.9467342,21.2215726 24.0608642,20.9827905 24.0794539,20.7254507 C24.0980436,20.4681109 24.0195551,20.2135019 23.8614088,20.0181333 Z"
+          ></path>
+        </svg>
+      </div>
+
+      
+      <div
+        data-testid="launcher-minimize-icon"
+        class="intercom-b2qi6i e11rlguj1"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M18.601 8.39897C18.269 8.06702 17.7309 8.06702 17.3989 8.39897L12 13.7979L6.60099 8.39897C6.26904 8.06702 5.73086 8.06702 5.39891 8.39897C5.06696 8.73091 5.06696 9.2691 5.39891 9.60105L11.3989 15.601C11.7309 15.933 12.269 15.933 12.601 15.601L18.601 9.60105C18.9329 9.2691 18.9329 8.73091 18.601 8.39897Z"
+            fill="white"
+          ></path>
+        </svg>
+      </div>
     </div>
+
+    <div class="chatContainer" id="chatContainer" style="display: none">
+      <form id="chatForm" action="submit">
+        <input
+          id="input"
+          type="text"
+          autocomplete="off"
+          placeholder="Type your message here..."
+        />
+        <button id="sendButton" aria-label="Send">
+          <i class="fa-solid fa-paper-plane fa-lg"></i>
+        </button>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/socket.io@4.7.5/dist/socket.io.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

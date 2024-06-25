@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  height: 100vh;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.chat-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 648px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+  z-index: 1000;
+  height: auto;
+}
+.fa-comment-dots {
+  font-size: 24px;
+  padding: 10px;
+}
+
+.chatContainer {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  max-width: 450px;
+  padding: 10px;
+  background-image: linear-gradient(rgb(243, 93, 93), yellow, white, white);
+  height: 750px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+}
+
+.chatIcon-xwnr1t {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(88, 86, 214);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  backface-visibility: hidden;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.chatIcon-1h5g64m {
+  user-select: none;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  transition: transform 0.16s linear 0s, opacity 0.08s linear 0s;
+  opacity: 0;
+  transform: rotate(-60deg);
+}
+
+.intercom-1paricb {
+  user-select: none;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  transition: transform 0.16s linear 0s, opacity 0.08s linear 0s;
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+.intercom-b2qi6i {
+  user-select: none;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  transition: transform 0.16s linear 0s, opacity 0.08s linear 0s;
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+.chatIcon-1caczyq {
+  user-select: none;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  transition: transform 0.16s linear 0s, opacity 0.08s linear 0s;
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+/* 
+.chatIcon-18guge0 {
+  padding: 32px 36px 140px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  position: relative;
+  color: rgb(255, 255, 255);
+  opacity: 0.996528;
+  border: 1px solid red;
+} */
+
+.intercom-qgosab img {
+  max-height: 32px;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .chatContainer {
+    width: 100%;
+    height: 100%;
+  }
+  #loginContainer input {
+    width: 80%;
+    padding: 0.5rem;
+  }
+
+  #signinButton {
+    padding: 0.5rem 1rem;
+  }
+}
