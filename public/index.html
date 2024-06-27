@@ -11,32 +11,28 @@
       crossorigin="anonymous"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="shortcut" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
 
-    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
     <style></style>
   </head>
   <body>
-    <h1>Welcome to African Pot</h1>
-    <p>Click for down so you go select wetin you wan chop</p>
-    <!-- <button class="chat-icon" id="chatIcon">
-      <i class="fa-solid fa-comment-dots fa"></i>
-    </button> -->
+    <header>
+      <h1>Welcome to African Pot</h1>
+      <p>Click for down so you go select wetin you wan chop</p>
+      lorem*100
+    </header>
+
     <div
-      class="chatIcon-launcher chatIcon-xwnr1t e11rlguj4"
+      class="chatIcon-box e11rlguj4"
       id="chatIcon-launcher"
       role="button"
-      data-testid="launcher-with-badge-cutout-none"
       aria-label="Open chatIcon Messenger"
       tabindex="0"
     >
-      <div
-        data-testid="launcher-default-open-icon"
-        class="chatIcon-1paricb e11rlguj3"
-      >
+      <div data-testid="launcher-default-open-icon" class="chatIcon-open">
         <svg
+          fill="#ffffff"
           focusable="false"
           aria-hidden="true"
           viewBox="0 0 28 32"
@@ -49,11 +45,7 @@
         </svg>
       </div>
 
-      
-      <div
-        data-testid="launcher-minimize-icon"
-        class="intercom-b2qi6i e11rlguj1"
-      >
+      <div data-testid="launcher-minimize-icon" class="chatIcon-minimize">
         <svg
           width="24"
           height="24"
@@ -72,19 +64,38 @@
     </div>
 
     <div class="chatContainer" id="chatContainer" style="display: none">
-      <form id="chatForm" action="submit">
+      <div id="minimize-x" class="minimize-x">
+        <svg
+          fill="#ffffff"
+          xmlns="http://www.w3.org/2000/svg"
+          width="15px"
+          height="15px"
+          viewBox="0 0 52 52"
+          enable-background="new 0 0 52 52"
+          xml:space="preserve"
+          id
+        >
+          <path
+            d="M31,25.4L44,12.3c0.6-0.6,0.6-1.5,0-2.1L42,8.1c-0.6-0.6-1.5-0.6-2.1,0L26.8,21.2c-0.4,0.4-1,0.4-1.4,0
+	L12.3,8c-0.6-0.6-1.5-0.6-2.1,0l-2.1,2.1c-0.6,0.6-0.6,1.5,0,2.1l13.1,13.1c0.4,0.4,0.4,1,0,1.4L8,39.9c-0.6,0.6-0.6,1.5,0,2.1
+	l2.1,2.1c0.6,0.6,1.5,0.6,2.1,0L25.3,31c0.4-0.4,1-0.4,1.4,0l13.1,13.1c0.6,0.6,1.5,0.6,2.1,0l2.1-2.1c0.6-0.6,0.6-1.5,0-2.1
+	L31,26.8C30.6,26.4,30.6,25.8,31,25.4z"
+          />
+        </svg>
+      </div>
+      <form id="form" action="submit">
         <input
           id="input"
           type="text"
           autocomplete="off"
-          placeholder="Type your message here..."
+          placeholder="Wetin you wan chop my brother..."
         />
         <button id="sendButton" aria-label="Send">
           <i class="fa-solid fa-paper-plane fa-lg"></i>
         </button>
       </form>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/socket.io@4.7.5/dist/socket.io.min.js"></script>
+
     <script src="script.js"></script>
   </body>
 </html>
