@@ -37,14 +37,37 @@ chatIconLauncher.addEventListener("click", () => {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  const message = inputElement.value
   const inputElement = form.getElementsByTagName("input")[0];
-  if (inputElement.value.length === 0) return;
+  if (message.length === 0) return;
+  displayMessage(message)
+
+
+
 });
 
+function displayMessage(message){
+const messageElement  = document.createElement('li');
+messageElement.innerHTML = message;
+messages.appendChild(messageElement);
+}
+
+signInButton('click', (e)=>{
+  e.preventDefault();
+  const newUser = usernameInput.value.trim();
+  if(newUser){
+    localStorage.setItem('username', newUser);
+    socket.emit('username', newUser)    
+  }
+})
+ 
+socket.on('connect', ()=>{
+  displayMessage(`you are connect here with id: ${socket.id}`)
+})
 
 // socket.on('chat message', function(msg) {
 //   var item = document.createElement('li');
-//   item.textContent = msg;
+//   item.textContent = msg; 
 //   document.getElementById('messages').appendChild(item);
 //   window.scrollTo(0, document.body.scrollHeight);
 // });
