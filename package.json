@@ -18,6 +18,7 @@
   "author": "Josemaria Odumodu",
   "license": "ISC",
   "dependencies": {
+    "connect-session-sequelize": "^7.1.7",
     "express": "^4.19.2",
     "sequelize": "^6.37.3",
     "socket.io": "^4.7.5",
